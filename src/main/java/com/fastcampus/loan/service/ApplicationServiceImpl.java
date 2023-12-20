@@ -12,17 +12,18 @@ import com.fastcampus.loan.repository.AcceptTermsRepository;
 import com.fastcampus.loan.repository.ApplicationRepository;
 import com.fastcampus.loan.repository.JudgmentRepository;
 import com.fastcampus.loan.repository.TermsRepository;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor

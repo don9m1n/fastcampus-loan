@@ -4,6 +4,7 @@ import com.fastcampus.loan.dto.RepaymentDTO.ListResponse;
 import com.fastcampus.loan.dto.RepaymentDTO.Request;
 import com.fastcampus.loan.dto.RepaymentDTO.Response;
 import com.fastcampus.loan.dto.RepaymentDTO.UpdateResponse;
+
 import java.util.List;
 
 public interface RepaymentService {

@@ -2,19 +2,18 @@ package com.fastcampus.loan.service;
 
 import com.fastcampus.loan.domain.Application;
 import com.fastcampus.loan.domain.Judgment;
-import com.fastcampus.loan.dto.ApplicationDTO;
 import com.fastcampus.loan.dto.ApplicationDTO.GrantAmount;
-import com.fastcampus.loan.dto.JudgmentDTO;
 import com.fastcampus.loan.dto.JudgmentDTO.Request;
 import com.fastcampus.loan.dto.JudgmentDTO.Response;
 import com.fastcampus.loan.exception.BaseException;
 import com.fastcampus.loan.exception.ResultType;
 import com.fastcampus.loan.repository.ApplicationRepository;
 import com.fastcampus.loan.repository.JudgmentRepository;
-import java.math.BigDecimal;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
 
 @Service
 @RequiredArgsConstructor

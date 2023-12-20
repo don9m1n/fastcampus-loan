@@ -1,19 +1,12 @@
 package com.fastcampus.loan.domain;
 
-import java.math.BigDecimal;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
-import org.hibernate.annotations.Where;
+import org.hibernate.annotations.SQLRestriction;
+
+import java.math.BigDecimal;
 
 @Entity
 @Getter
@@ -23,7 +16,7 @@ import org.hibernate.annotations.Where;
 @AllArgsConstructor
 @DynamicInsert
 @DynamicUpdate
-@Where(clause = "is_deleted=false")
+@SQLRestriction(value = "is_deleted=false")
 public class Entry extends BaseEntity {
 
   @Id
